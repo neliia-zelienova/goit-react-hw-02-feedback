@@ -1,11 +1,17 @@
 import React from "react";
+import styles from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       {options.map((option) => {
           return (
-            <button type="button" key={option} onClick={onLeaveFeedback}>
+            <button
+              className={styles.option_button}
+              type="button"
+              key={option}
+              onClick={onLeaveFeedback}
+            >
               {option.charAt(0).toUpperCase() + option.slice(1)}
             </button>
           );

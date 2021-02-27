@@ -1,7 +1,7 @@
 import React from "react";
-import Statistics from "./Statistics";
-import FeedbackOptions from "./FeedbackOptions";
-import Section from "./Section";
+import Statistics from "./Statistics/Statistics";
+import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
+import Section from "./Section/Section";
 
 class LeaveFeedback extends React.Component {
   state = {
@@ -52,7 +52,7 @@ class LeaveFeedback extends React.Component {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={["good", "bad", "neutral"]}
+            options={["good", "neutral", "bad"]}
             onLeaveFeedback={this.handleClick}
           />
         </Section>
