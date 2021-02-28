@@ -5,16 +5,16 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       {options.map((option) => {
-          return (
-            <button
-              className={styles.option_button}
-              type="button"
-              key={option}
-              onClick={onLeaveFeedback}
-            >
-              {option.charAt(0).toUpperCase() + option.slice(1)}
-            </button>
-          );
+        return (
+          <button
+            className={styles.option_button}
+            type="button"
+            key={option}
+            onClick={onLeaveFeedback}
+          >
+            {option.charAt(0).toUpperCase() + option.slice(1)}
+          </button>
+        );
       })}
     </>
   );

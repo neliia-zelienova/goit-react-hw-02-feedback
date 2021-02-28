@@ -1,11 +1,12 @@
-import './App.css';
-import LeaveFeedback from './components/LeaveFeedback'
-import Container from './components/Container'
+import "./App.css";
+import LeaveFeedback from "./components/LeaveFeedback";
+import Container from "./components/Container";
 
 function App() {
   return (
-    <Container><LeaveFeedback /></Container>
-    
+    <Container>
+      <LeaveFeedback />
+    </Container>
   );
 }
 
