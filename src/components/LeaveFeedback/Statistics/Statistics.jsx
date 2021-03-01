@@ -1,6 +1,6 @@
 import React from "react";
 import Notification from "../Notification";
-import styles from "./statistics.module.css";
+import styles from "./Statistics.module.css";
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (

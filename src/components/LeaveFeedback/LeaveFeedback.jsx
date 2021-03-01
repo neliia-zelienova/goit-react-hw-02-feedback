@@ -21,29 +21,10 @@ class LeaveFeedback extends React.Component {
   };
 
   handleClick = (e) => {
-    switch (e.target.innerHTML.toLowerCase()) {
-      case "good":
-        this.setState((prevState) => ({
-          good: prevState.good + 1,
-        }));
-        break;
-      case "bad":
-        this.setState((prevState) => {
-          return {
-            bad: prevState.bad + 1,
-          };
-        });
-        break;
-      case "neutral":
-        this.setState((prevState) => {
-          return {
-            neutral: prevState.neutral + 1,
-          };
-        });
-        break;
-      default:
-        break;
-    }
+    const option = e.currentTarget.name;
+    this.setState((prevState) => ({
+      [option]: prevState[option] + 1,
+    }));
   };
 
   render() {
