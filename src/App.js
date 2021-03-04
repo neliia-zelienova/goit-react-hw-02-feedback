@@ -33,7 +33,6 @@ class App extends React.Component {
     const { good, neutral, bad } = this.state;
     return (
       <Container>
-        <div>
           <Section title="Please leave feedback">
             <FeedbackOptions
               options={["good", "neutral", "bad"]}
@@ -49,7 +48,6 @@ class App extends React.Component {
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           </Section>
-        </div>
       </Container>
     );
   }
